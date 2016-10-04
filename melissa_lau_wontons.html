@@ -44,6 +44,50 @@
           <li>Cook in boiling water for 5 minutes, or until floating at surface.</li>
         </ol>
         </section>
+      <section>
+        <h2>Reviews</h2>
+        <form action="/reviews" method="post">
+          <label for="reviewer_name">Name of Reviewer</label>
+          <input type="text" name="review[name]" id="reviewer_name">
+          <br>
+          <br>
+
+          <label for="rating">Rating</label>
+          <br>
+          <input type="radio" name="review[rating]" id="1" value="1" checked>
+          <label for="1">1</label>
+          <br>
+          <input type="radio" name="review[rating]" id="2" value="2">
+          <label for="2">2</label>
+          <br>
+          <input type="radio" name="review[rating]" id="3" value="3">
+          <label for="3">3</label>
+          <br>
+          <input type="radio" name="review[rating]" id="4" value="4">
+          <label for="4">4</label>
+          <br>
+          <input type="radio" name="review[rating]" id="5" value="5">
+          <label for="5">5</label>
+          <br>
+          <br>
+
+          <label for="cooking_expertise">Cooking Expertise</label>
+          <!-- dropdown -->
+          <select name="review[expertise]" id="cooking_expertise">
+            <option value="select_cooking_expertise" selected="selected" disabled>Select Cooking Expertise</option>
+            <option value="sometimes_cook">Sometimes Cook</option>
+            <option value="cook_everyday">Cook Everyday</option>
+            <option value="cooking_is_a_hobby">Cooking is a Hobby</option>
+            <option value="professional_team">Professional Chef</option>
+          </select>
+          <br>
+          <br>
+
+          <label>Review
+          <textarea name="review[review]"></textarea>
+          </label>
+        </form>
+      </section>
       <footer>
         <p>Recipe originated from my mother, who learned how to cook from her mother.</p>
       </footer>
